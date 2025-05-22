@@ -9,6 +9,7 @@ import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.core.Form;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
@@ -36,15 +37,27 @@ class GreeterResourceTest {
                     .path("/api/greeter")
                     .request()
                     .get(String.class);
-            System.out.println(content);
+            // System.out.println(content);
+            Assertions.assertTrue(content.contains("greeting"), "Initial GET request should contain 'greeting'");
         }
 
         {
+            String updatedGreeting = "HelloWorld!";
             String content = client.target(baseUri)
                     .path("/api/greeter")
                     .request()
-                    .post(Entity.form(new Form().param("greeting", "HelloWorld!")), String.class);
-            System.out.println(content);
+                    .post(Entity.form(new Form().param("greeting", updatedGreeting)), String.class);
+            // System.out.println(content);
+            Assertions.assertTrue(content.contains(updatedGreeting), "POST request response should contain the new greeting");
+        }
+
+        {
+            String expectedGreeting = "HelloWorld!";
+            String content = client.target(baseUri)
+                    .path("/api/greeter")
+                    .request()
+                    .get(String.class);
+            Assertions.assertTrue(content.contains(expectedGreeting), "Subsequent GET request should contain the updated greeting");
         }
     }
 }
