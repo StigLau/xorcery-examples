@@ -1,13 +1,13 @@
 package com.exoreaction.xorcery.examples.greeter;
 
-import com.exoreaction.xorcery.domainevents.api.*;
-import com.exoreaction.xorcery.domainevents.context.CommandMetadata;
-import com.exoreaction.xorcery.domainevents.publisher.DomainEventPublisher;
+import dev.xorcery.domainevents.api.*;
+import dev.xorcery.domainevents.context.CommandMetadata;
+import dev.xorcery.domainevents.publisher.api.DomainEventPublisher;
 import com.exoreaction.xorcery.examples.greeter.commands.UpdateGreeting;
-import com.exoreaction.xorcery.metadata.CommonMetadata;
-import com.exoreaction.xorcery.metadata.Metadata;
-import com.exoreaction.xorcery.neo4j.client.GraphDatabase;
-import com.exoreaction.xorcery.neo4j.client.GraphResult;
+import dev.xorcery.metadata.CommonMetadata;
+import dev.xorcery.metadata.Metadata;
+import dev.xorcery.neo4j.client.GraphDatabase;
+import dev.xorcery.neo4j.client.GraphResult;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import org.jvnet.hk2.annotations.Service;

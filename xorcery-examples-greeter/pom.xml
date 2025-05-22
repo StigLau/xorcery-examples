@@ -36,8 +36,15 @@
         </dependency>
         <dependency>
             <groupId>dev.xorcery</groupId>
-            <artifactId>xorcery-service-api</artifactId>
-            <version>0.161.10</version>
+            <artifactId>xorcery-jaxrs-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.xorcery</groupId>
+            <artifactId>xorcery-domainevents-publisher</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.xorcery</groupId>
+            <artifactId>xorcery-jsonapi-service</artifactId>
         </dependency>
 
         <!-- REST API -->

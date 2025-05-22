@@ -16,7 +16,8 @@ open module xorcery.examples.greeter {
     requires xorcery.reactivestreams.api;
 
     requires xorcery.neo4j.shaded;
-    requires xorcery.service.api;
+    requires xorcery.domainevents.entity;
+    requires xorcery.jsonapi.service;
 
     requires jakarta.ws.rs;
     requires jakarta.inject;

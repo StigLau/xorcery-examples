@@ -1,10 +1,10 @@
 package com.exoreaction.xorcery.examples.greeter.test;
 
-import com.exoreaction.xorcery.configuration.Configuration;
-import com.exoreaction.xorcery.configuration.InstanceConfiguration;
-import com.exoreaction.xorcery.configuration.builder.ConfigurationBuilder;
-import com.exoreaction.xorcery.junit.XorceryExtension;
-import com.exoreaction.xorcery.net.Sockets;
+import dev.xorcery.configuration.Configuration;
+import dev.xorcery.configuration.InstanceConfiguration;
+import dev.xorcery.configuration.builder.ConfigurationBuilder;
+import dev.xorcery.junit.XorceryExtension;
+import dev.xorcery.net.Sockets;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
@@ -38,7 +38,7 @@ class GreeterResourceTest {
                     .request()
                     .get(String.class);
             // System.out.println(content);
-            Assertions.assertTrue(content.contains("greeting"), "Initial GET request should contain 'greeting'");
+            Assertions.assertTrue(content.contains("Hello World"), "Initial GET request should contain default greeting 'Hello World'");
         }
 
         {

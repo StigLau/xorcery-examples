@@ -1,13 +1,13 @@
 package com.exoreaction.xorcery.examples.greeter;
 
-import com.exoreaction.xorcery.configuration.Configuration;
-import com.exoreaction.xorcery.configuration.InstanceConfiguration;
-import com.exoreaction.xorcery.domainevents.api.MetadataEvents;
-import com.exoreaction.xorcery.neo4jprojections.api.Neo4jProjections;
-import com.exoreaction.xorcery.neo4jprojections.api.ProjectionStreamContext;
-import com.exoreaction.xorcery.reactivestreams.api.server.ServerWebSocketStreams;
-import com.exoreaction.xorcery.server.api.ServiceResourceObject;
-import com.exoreaction.xorcery.server.api.ServiceResourceObjects;
+import dev.xorcery.configuration.Configuration;
+import dev.xorcery.configuration.InstanceConfiguration;
+import dev.xorcery.domainevents.api.MetadataEvents;
+import dev.xorcery.neo4jprojections.api.Neo4jProjections;
+import dev.xorcery.neo4jprojections.api.ProjectionStreamContext;
+import dev.xorcery.reactivestreams.api.server.ServerWebSocketStreams;
+import dev.xorcery.jsonapi.service.ServiceResourceObject;
+import dev.xorcery.jsonapi.service.ServiceResourceObjects;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import org.glassfish.hk2.api.PreDestroy;

@@ -13,32 +13,32 @@
     <dependencies>
     <!-- Core dependencies -->
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-core</artifactId>
     </dependency>
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-runner</artifactId>
     </dependency>
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-metadata</artifactId>
     </dependency>
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-configuration-api</artifactId>
     </dependency>
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-json</artifactId>
     </dependency>
 
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-reactivestreams-client</artifactId>
     </dependency>
     <dependency>
-        <groupId>com.exoreaction.xorcery</groupId>
+        <groupId>dev.xorcery</groupId>
         <artifactId>xorcery-reactivestreams-server</artifactId>
     </dependency>
     </dependencies>
